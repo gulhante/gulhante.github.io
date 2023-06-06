@@ -298,6 +298,7 @@ table a {
         background-color: rgb(155, 133, 123,0);
         
         margin-bottom: 20px; /* veya istediğiniz bir değer */
+        width: 100%;
     }
     
     .card {
