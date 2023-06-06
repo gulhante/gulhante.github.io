@@ -1,1 +1,393 @@
 
+/* * {
+    margin: 0;
+} */
+
+body {
+    margin: 0px;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Rajdhani', sans-serif; */
+
+    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(245, 239, 239, 0.5)), url("./computadora-portatil-maqueta-trabajo-taza-cafe-libros-material-oficina-escritorio_35674-398.webp");
+    background-size: cover;
+
+}
+
+.banner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.641);
+    border: 1px;
+    /* border-bottom: 10px solid black; */
+    box-shadow: 6px 5px 3px rgba(102, 88, 88, 0.7);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+
+
+}
+.logo img{
+    height: 10vh;
+}
+
+/* .spanLogo {
+    color: rgb(176, 123, 104);
+} */
+
+.nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav ul li {
+    margin-right: 10px;
+}
+
+.nav a {
+    
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav {
+    width: 350px;
+}
+
+.links:hover {
+
+   opacity: 0.5;
+
+}
+
+.banner li:not(:last-child)::after {
+    content: "|";
+    color: white;
+    margin-left: 10px;
+}
+
+.baslik {
+
+    margin-top: 15vh;
+
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white
+}
+
+
+.tablo {
+
+    height: 90vh;
+    color: white;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    text-align: center;
+
+    margin-left: 100px;
+    margin-right: 100px;
+    /* margin-top: 4vh; */
+
+}
+
+
+.row {
+
+    width: 100%;
+    height: 600px;
+    background-color: rgb(155, 133, 123);
+    box-shadow: 6px 5px 3px rgba(102, 88, 88, 0.7);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.row p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    /* background-color: rgb(250, 247, 247); */
+    box-shadow: 6px 5px 3px rgba(102, 88, 88, 0.7);
+    margin-left: 30px;
+    /* margin-right: 30px; */
+
+
+}
+
+.card img {
+    width: 100px;
+    height: 250px;
+
+}
+
+.card h3,
+h4,
+p {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.white {
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("./img/R.jpeg");
+    height: 90vh;
+    /* %10 kismini header icin kullandik kalan 90 lik kismi main icin kullaniyoruz */
+    background-size: cover;
+    /* arkaplan resmini div i kapsayacak sekilde yerlestirir */
+    text-align: center;
+    color: white;
+}
+
+/* -------------------------------- ABOUT ------------------------------------ */
+
+.main img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.main h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 40px;
+}
+
+/* -------------------------------- CONTACT ------------------------------------ */
+
+table {
+    margin: auto;
+    /* tablo ortalandi */
+    text-align: left;
+    /* tablonun icindeki metinleri sola dayadik */
+
+}
+
+.icon {
+    font-size: 40px;
+    /* iconlarin boyutlarini ayarladik */
+}
+
+.label {
+    font-size: 40px;
+    /* : noktalarin boyutunu ayarladik */
+
+}
+
+table a {
+    color: white;
+    /* tablo daki linklerin yazi rengi */
+}
+
+.container-main {
+    /* projedeki iki container icin ortak durumlar burada */
+    margin-top: 50px;
+    width: 80%;
+    margin: auto;
+    /* container in icindekileri (satirlari) ortalamak icin */
+
+}
+.tablo .card:hover{
+    opacity: 0.9;
+    
+}
+
+
+/* Media */
+
+/* Telefon Boyutu */
+@media screen and (max-width: 480px) {
+    /* Burada gerekli CSS kurallarını tanımlayabilirsiniz */
+    
+    .banner li:not(:last-child)::after{
+        display: none;
+    }
+    .banner {
+        height: 15vh;
+       
+    }
+
+    .logo img {
+        height: 8vh;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .main img {
+        margin-top: 50px;
+    }
+
+    .main h2 {
+        font-size: 30px;
+    }
+
+    .container-main {
+        width: 90%;
+    }
+
+    .main-index {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content:center;
+       padding-top: 500px;
+    }
+    .tablo {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    
+    .row {
+        background-color: rgb(155, 133, 123,0);
+        
+        margin-bottom: 20px; /* veya istediğiniz bir değer */
+    }
+    
+    .card {
+        margin-top: 20px; /* veya istediğiniz bir değer */
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-index{
+        margin-top: 200px;
+    }
+    .baslik{
+        display: none;
+    }
+    
+}
+
+/* Tablet Boyutu */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    /* Burada gerekli CSS kurallarını tanımlayabilirsiniz */
+    .banner li:not(:last-child)::after{
+        display: none;
+    }
+    
+    .banner {
+        height: 15vh;
+    }
+
+    .logo img {
+        height: 8vh;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav ul li {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .main {
+        height: 90vh;
+    }
+
+    .main img {
+        margin-top: 100px;
+    }
+
+    .main h2 {
+        font-size: 40px;
+    }
+
+    .container-main {
+        width: 80%;
+    }
+    .main-index {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content:center;
+       padding-top: 600px;
+    }
+    .tablo {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .row {
+        background-color: rgb(155, 133, 123,0);
+        margin-bottom: 20px; /* veya istediğiniz bir değer */
+       
+    }
+    
+    .card {
+        margin-top: 20px; /* veya istediğiniz bir değer */
+    }
+
+    .card img {
+        width: 100px;
+        height: 250px;
+    }
+    .baslik{
+        display: none;
+    }
+   
+}
