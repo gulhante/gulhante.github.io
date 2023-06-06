@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
     <title>| Gülhan Tezcan</title>
     <link rel="shortcut icon" href="./img/gulte.png" type="image/x-icon">
+
+   
+
 </head>
 
 <body>
@@ -20,7 +23,10 @@
                 <a href="index.html"><img src="./img/gt.png" alt="" ></a>
             </div>
             <div class="nav">
-                <ul class="menu-ul">
+                
+                    <i class="fas fa-bars" id = "menu-icon"></i>
+                  
+                <ul class="menu-ul" id="menu1">
                     <li><a href="index.html" class="links"> HOME </a></li>
                     <li><a href="about.html" class="links"> ABOUT </a></li>
                     <li><a href="contact.html" class="links">CONTACT</a></li>
@@ -50,21 +56,21 @@
 
 
             <div class="row">
-               
-            <p> Our Work <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="card"> 
+            <p class ="work"> Mein Ziel <br> Der Inhalt wird hier so schnell wie möglich hinzugefügt. Bitte folgen Sie den Updates.</p>
             </div>
-      
+        </div>
             
             <div class="row">
             <div class="card white">
               <img src="./img/bilgisayar-programcilarinin-yazdigi-ilk-kod-neden-merhaba-dunya-1571410897.webp" alt="Snow" style="width:100%">
               <div class="card-container">
               <h3>Ich arbeite gerade daran</h3>
-              <h4>Trade</h4>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
+              <p>- Java Skills</p>
+              <p>- Lambda Skills</p>
+              <p>- HTML-CSS Skills</p>
+              <p>- GitHub Skills</p>
+              <p>- Selenium Skills</p>
               </div>
               </div>
             </div>
@@ -73,12 +79,12 @@
             <div class="card white">
               <img src="./img/OIP (1).jpeg" alt="Lights" style="width:100%">
               <div class="card-container">
-              <h3>Ich lerne gerade</h3>
-              <h4>Trade</h4>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
+              <h3>- Ich lerne gerade</h3>
+              <p>- Selenium</p>
+              <p>- Appium</p>
+              <p>- Jira</p>
+              <p>- AWS</p>
+              <p>- Jenkins</p>
               </div>
               </div>
             </div>
@@ -88,11 +94,11 @@
               <img src="./img/shutterstock_1666500295_edited.webp" alt="Mountains" style="width:100%">
               <div class="card-container">
               <h3>Tech-Stack</h3>
-              <h4>Trade</h4>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
-              <p>Blablabla</p>
+              <p>- JAVA</p>
+              <p>- HTML-CSS</p>
+              <p>- VISUAL STUDIO CODE</p>
+              <p>- ADOBE INDESIGN</p>
+              <p>- ADOBE PHOTOSHOP</p>
               </div>
               </div>
             </div>
@@ -102,13 +108,17 @@
     </div>
 
     <script>
-        const menuIcon = document.querySelector('.fa-bars');
-        const menuList = document.querySelector('.menu-ul');
+        const menuIcon = document.getElementById("menu-icon");
+        const menu1 = document.getElementById("menu1");
       
-        menuIcon.addEventListener('click', () => {
-          menuList.classList.toggle('active');
-        });
+        menuIcon.addEventListener("click", toggleMenu);
+      
+        function toggleMenu() {
+          menu1.classList.toggle("menu-ul");
+        }
       </script>
+
+
 
 
         <script src="https://kit.fontawesome.com/a266e6a814.js" crossorigin="anonymous"></script>

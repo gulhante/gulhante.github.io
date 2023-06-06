@@ -1,4 +1,3 @@
-
 /* * {
     margin: 0;
 } */
@@ -10,7 +9,7 @@ body {
     /* font-family: 'Rajdhani', sans-serif; */
 
     background-color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(245, 239, 239, 0.5)), url("./img/computadora-portatil-maqueta-trabajo-taza-cafe-libros-material-oficina-escritorio_35674-398.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(245, 239, 239, 0.4)), url("./img/computadora-portatil-maqueta-trabajo-taza-cafe-libros-material-oficina-escritorio_35674-398.webp");
     background-size: cover;
 
 }
@@ -52,9 +51,6 @@ body {
     height: 10vh;
 }
 
-/* .spanLogo {
-    color: rgb(176, 123, 104);
-} */
 
 .nav ul {
     text-decoration: none;
@@ -77,6 +73,11 @@ body {
 
 .nav {
     width: 350px;
+}
+.nav i{
+    font-size: 40px; 
+    color:white;
+    display: none;
 }
 
 .links:hover {
@@ -157,8 +158,17 @@ body {
 h4,
 p {
     text-align: left;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-left: 20px;
+   
+    
+}
+.work{
+    position: relative;
+  margin-top: 40%;
+  box-sizing: inherit;
+
+
 }
 
 .white {
@@ -169,54 +179,68 @@ p {
 }
 
 
-.main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("./img/R.jpeg");
-    height: 90vh;
-    /* %10 kismini header icin kullandik kalan 90 lik kismi main icin kullaniyoruz */
-    background-size: cover;
-    /* arkaplan resmini div i kapsayacak sekilde yerlestirir */
-    text-align: center;
+.main{     
     color: white;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    text-align: center;
+   
+}
+.main-about{     
+    color: white;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+}
+.main-about p{
+    
+   
+    font-size: 20px;
+}
+
+.main p{
+    
+    text-align: center;
+    font-size: 30px;
 }
 
 /* -------------------------------- ABOUT ------------------------------------ */
 
-.main img {
+.main-about img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-top: 100px;
 }
 
-.main h2 {
-    font-family: "Audiowide", sans-serif;
+.main-about h2{
+   
     font-size: 40px;
 }
 
 /* -------------------------------- CONTACT ------------------------------------ */
 
-table {
-    margin: auto;
-    /* tablo ortalandi */
-    text-align: left;
-    /* tablonun icindeki metinleri sola dayadik */
-
+table{
+    
+    margin: auto; /* tablo ortalandi */
+    text-align: left; /* tablonun icindeki metinleri sola dayadik */
+    
 }
 
-.icon {
-    font-size: 40px;
-    /* iconlarin boyutlarini ayarladik */
+.icon{
+    font-size: 40px; /* iconlarin boyutlarini ayarladik */
+    
 }
 
-.label {
-    font-size: 40px;
-    /* : noktalarin boyutunu ayarladik */
-
+.label{
+    font-size: 40px; /* : noktalarin boyutunu ayarladik */
+    
 }
 
-table a {
-    color: white;
-    /* tablo daki linklerin yazi rengi */
+table a{
+    color: white; /* tablo daki linklerin yazi rengi */
 }
 
 .container-main {
@@ -251,7 +275,7 @@ table a {
         height: 8vh;
     }
 
-    .nav ul {
+    /* .nav ul {
         flex-direction: column;
         align-items: center;
     }
@@ -259,7 +283,51 @@ table a {
     .nav ul li {
         margin-right: 0;
         margin-bottom: 10px;
+    } */
+
+  
+    .nav i{
+        font-size: 40px; 
+        color:white;
+        display:flex;
+        margin-left: 150px;
     }
+      
+      .nav i:hover{
+        opacity: 0.5;
+       cursor: pointer;
+
+      }
+     
+    
+      .nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        transition: all 0.3s ease;
+      }
+      
+      .nav ul.menu-ul {
+        display:flex;
+      }
+      
+      .menu-ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      .menu-ul a {
+        color: white;
+        display: block;
+        padding: 10px;
+      }
+    
 
     .main {
         height: auto;
@@ -290,7 +358,8 @@ table a {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-      
+        width:100%;
+        margin:auto;
     }
     
     
@@ -298,12 +367,12 @@ table a {
         background-color: rgb(155, 133, 123,0);
         
         margin-bottom: 20px; /* veya istediğiniz bir değer */
-      
     }
     
     .card {
-        margin-top: 20px; /* veya istediğiniz bir değer */
-       
+        /* margin-top: 20px; veya istediğiniz bir değer */
+        margin:auto;
+        width: 100vh;
     }
 
     .card img {
@@ -373,6 +442,8 @@ table a {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        width:100%;
+        margin:auto;
     }
     
     .row {
@@ -382,13 +453,16 @@ table a {
     }
     
     .card {
-        margin-top: 20px; /* veya istediğiniz bir değer */
+     
+        margin:auto;
+        width: 100vh;
+       
     }
 
-    .card img {
+    /* .card img {
         width: 100px;
         height: 250px;
-    }
+    } */
     .baslik{
         display: none;
     }
