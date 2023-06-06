@@ -303,7 +303,7 @@ table a {
     
     .card {
         margin-top: 20px; /* veya istediğiniz bir değer */
-        width: 100%;
+        width: 100vh;
     }
 
     .card img {
