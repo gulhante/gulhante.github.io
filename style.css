@@ -290,7 +290,7 @@ table a {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 100%;
+      
     }
     
     
@@ -298,12 +298,12 @@ table a {
         background-color: rgb(155, 133, 123,0);
         
         margin-bottom: 20px; /* veya istediğiniz bir değer */
-        width: 100%;
+      
     }
     
     .card {
         margin-top: 20px; /* veya istediğiniz bir değer */
-        width: 100vh;
+       
     }
 
     .card img {
@@ -386,7 +386,7 @@ table a {
     }
 
     .card img {
-        width: 100%;
+        width: 100px;
         height: 250px;
     }
     .baslik{
