@@ -93,7 +93,7 @@ body {
 
 .baslik {
 
-    margin-top: 15vh;
+    margin-top: 100px;
 
     display: flex;
     justify-content: center;
@@ -104,7 +104,6 @@ body {
 
 .rahmen {
 
-    height: 90vh;
     color: white;
     display: flex;
     /* flex-wrap: wrap; */
@@ -163,6 +162,7 @@ body {
     /* margin-right: 30px; */
     margin-left: auto;
     margin-right: auto;
+   
 
 }
 
@@ -337,15 +337,7 @@ table a{
       }
     
 
-    .main {
-        width: 100vh;
-        margin: auto;
-
-    }
-    .main-about {
-        width: 100vh;
-       margin: auto;
-    }
+   
 
     .main-about img {
         margin-top: 20px;
@@ -369,10 +361,10 @@ table a{
         flex-direction: column;
         width: 100%;
         justify-content:center;
-       padding-top: 500px;
+       
     }
     .rahmen {
-        margin-top: 100px;
+        
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -384,8 +376,8 @@ table a{
     
     .row {
         background-color: rgb(155, 133, 123,0);
-        
-        margin-bottom: 20px; /* veya istediğiniz bir değer */
+        height: 500px;
+        margin-bottom: 30px;
     }
 
 
@@ -399,12 +391,16 @@ table a{
     } 
     
     .card {
+        
         margin-left: auto;
         margin-right: auto;
+        
     }
     .card1 {
-        margin-left: auto;
-        margin-right: auto;
+        
+        margin-left: 40px;
+        margin-right: 40px;
+       
     }
 
     .card img {
@@ -412,9 +408,7 @@ table a{
         height: auto;
     }
 
-    .main-index{
-        margin-top: 200px;
-    }
+    
     .baslik{
         display: none;
     }
@@ -476,10 +470,10 @@ table a{
         flex-direction: column;
         width: 100%;
         justify-content:center;
-       padding-top: 600px;
+       
     }
     .rahmen {
-        margin-top: 100px;
+        
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -490,7 +484,7 @@ table a{
     
     .row {
         background-color: rgb(155, 133, 123,0);
-        margin-bottom: 20px; /* veya istediğiniz bir değer */
+        
        
     }
     .row-about-contact {
@@ -510,6 +504,7 @@ table a{
     }
 
     .card1 {
+      
         margin-left: auto;
         margin-right: auto;
     }
