@@ -85,6 +85,20 @@ body {
 
 }
 
+.main-about a{
+    color: rgb(246, 243, 241);
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.main a{
+    color: rgb(221, 218, 216);
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
 .banner li:not(:last-child)::after {
     content: "|";
     color: white;
