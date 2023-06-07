@@ -1,15 +1,14 @@
-/* * {
-    margin: 0;
-} */
+
 
 body {
     margin: 0px;
     height: 100vh;
+    
     font-family: 'Raleway', sans-serif;
     /* font-family: 'Rajdhani', sans-serif; */
 
     background-color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(245, 239, 239, 0.4)), url("./img/computadora-portatil-maqueta-trabajo-taza-cafe-libros-material-oficina-escritorio_35674-398.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("./img/background.webp");
     background-size: cover;
 
 }
@@ -103,7 +102,7 @@ body {
 }
 
 
-.tablo {
+.rahmen {
 
     height: 90vh;
     color: white;
@@ -117,6 +116,7 @@ body {
     /* margin-top: 4vh; */
 
 }
+
 
 
 .row {
@@ -137,14 +137,32 @@ body {
     margin-right: 20px;
 }
 
+.row-about-contact {
+    margin-top: 250px;
+    width: 80%;
+    height: 60vh;
+    background-color: rgb(155, 133, 123,0.5);
+    box-shadow: 6px 5px 3px rgba(32, 31, 31, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+
+
+
 .card {
     width: 350px;
     height: 500px;
     /* background-color: rgb(250, 247, 247); */
     box-shadow: 6px 5px 3px rgba(102, 88, 88, 0.7);
-    margin-left: 30px;
+    /* margin-left: 30px; */
     /* margin-right: 30px; */
-
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -164,10 +182,10 @@ p {
     
 }
 .card1{
-    display: flex;
-  justify-content: center;
-  align-items: center;
+  
     box-sizing: inherit;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -184,28 +202,29 @@ p {
 .main{     
     color: white;
     margin: auto;
-    margin-top: 200px;
-    display: flex;
-    text-align: center;
+  
    
 }
 .main-about{     
     color: white;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    text-align: center;
+    
 }
 .main-about p{
-    
-   
+     /* text-align: center; */
     font-size: 20px;
 }
 
 .main p{
     
+    /* text-align: center; */
+    font-size: 20px;
+}
+.contact{
+    /* margin-top: 100px; */
+    margin-left: 90px;
+    margin-right: 90px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* -------------------------------- ABOUT ------------------------------------ */
@@ -214,11 +233,13 @@ p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 20px;
+    
+
 }
 
 .main-about h2{
-   
+   /* text-align: center; */
     font-size: 40px;
 }
 
@@ -243,17 +264,11 @@ table{
 
 table a{
     color: white; /* tablo daki linklerin yazi rengi */
+    
 }
 
-.container-main {
-    /* projedeki iki container icin ortak durumlar burada */
-    margin-top: 50px;
-    width: 80%;
-    margin: auto;
-    /* container in icindekileri (satirlari) ortalamak icin */
 
-}
-.tablo .card:hover{
+.rahmen .card:hover{
     opacity: 0.9;
     
 }
@@ -323,20 +338,31 @@ table a{
     
 
     .main {
-        height: auto;
+        width: 100vh;
+        margin: auto;
+
+    }
+    .main-about {
+        width: 100vh;
+       margin: auto;
     }
 
-    .main img {
-        margin-top: 50px;
+    .main-about img {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
-    .main h2 {
-        font-size: 30px;
+    .main-about h2 {
+        font-size: 20px;
+        margin-left: 30px;
     }
 
-    .container-main {
-        width: 90%;
+    .main-about p {
+        font-size: 15px;
+        margin-left: 30px;
     }
+
+   
 
     .main-index {
         display: flex;
@@ -345,7 +371,7 @@ table a{
         justify-content:center;
        padding-top: 500px;
     }
-    .tablo {
+    .rahmen {
         margin-top: 100px;
         display: flex;
         flex-direction: column;
@@ -361,11 +387,24 @@ table a{
         
         margin-bottom: 20px; /* veya istediğiniz bir değer */
     }
+
+
+    .row-about-contact {
+    
+      margin-left: auto;
+      margin-right: auto;
+        
+      background-color: rgb(155, 133, 123,0.5);
+    
+    } 
     
     .card {
-        /* margin-top: 20px; veya istediğiniz bir değer */
-        margin:auto;
-        width: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card1 {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card img {
@@ -408,20 +447,30 @@ table a{
     }
 
     .main {
-        height: 90vh;
+        width: 100vh;
+        margin: auto;
+        
+    }
+    .main-about {
+        width: 100vh;
+        margin: auto;
     }
 
-    .main img {
-        margin-top: 100px;
+    .main-about img {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
-    .main h2 {
-        font-size: 40px;
+    .main-about h2 {
+        font-size: 30px;
+        margin-left: 30px;
     }
 
-    .container-main {
-        width: 80%;
+    .main-about p {
+        font-size: 20px;
+        margin-left: 30px;
     }
+
     .main-index {
         display: flex;
         flex-direction: column;
@@ -429,7 +478,7 @@ table a{
         justify-content:center;
        padding-top: 600px;
     }
-    .tablo {
+    .rahmen {
         margin-top: 100px;
         display: flex;
         flex-direction: column;
@@ -444,18 +493,28 @@ table a{
         margin-bottom: 20px; /* veya istediğiniz bir değer */
        
     }
+    .row-about-contact {
     
+        margin-left: auto;
+        margin-right: auto;
+          
+    
+      
+      } 
+      
     .card {
      
-        margin:auto;
-        width: 100vh;
+        margin-left: auto;
+        margin-right: auto;
        
     }
 
-    /* .card img {
-        width: 100px;
-        height: 250px;
-    } */
+    .card1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
     .baslik{
         display: none;
     }
