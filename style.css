@@ -163,13 +163,15 @@ p {
    
     
 }
-.work{
-    position: relative;
-  margin-top: 40%;
-  box-sizing: inherit;
-
-
+.card1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    box-sizing: inherit;
 }
+
+
+
 
 .white {
     color: black;
