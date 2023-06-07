@@ -270,7 +270,7 @@ table{
 
 table a{
     color: white; /* tablo daki linklerin yazi rengi */
-    
+    text-decoration: none;
 }
 
 
