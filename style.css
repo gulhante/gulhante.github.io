@@ -391,7 +391,10 @@ table a{
     
       margin-left: auto;
       margin-right: auto;
-      box-sizing: content-box;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content:center;
         
       background-color: rgb(155, 133, 123,0.5);
     
