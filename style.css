@@ -395,7 +395,7 @@ table a{
       flex-direction: column;
       width: 80%;
       justify-content:center;
-        box-sizing:border-box;
+        box-sizing: content-box;
       background-color: rgb(155, 133, 123,0.5);
     
     } 
