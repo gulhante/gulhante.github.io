@@ -397,7 +397,7 @@ table a{
       justify-content:center;
         box-sizing: content-box;
       background-color: rgb(155, 133, 123,0.5);
-    
+    margin-bottom: 10%;
     } 
     
     .card {
