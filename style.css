@@ -389,8 +389,12 @@ table a{
 
     .row-about-contact {
     
-      margin-left: auto;
-      margin-right: auto;
+        margin-bottom: 5px;
+        box-sizing: content-box;
+        display: flex; /**resmi div içinde ortalamak için flexbox komutları*/
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
         
       background-color: rgb(155, 133, 123,0.5);
     
