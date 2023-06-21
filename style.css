@@ -355,9 +355,17 @@ table a{
         margin-left: 30px;
     }
 
+    .main-about {
+    text-align: justify;
+}
+
     .main-about p {
         font-size: 15px;
-        margin-left: 30px;
+        /* margin-left: 30px; */ 
+        /* strg+kc yoruma alma */
+         text-align: center;
+    
+    overflow-wrap: break-word;
     }
 
    
