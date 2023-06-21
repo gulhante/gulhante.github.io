@@ -402,19 +402,20 @@ table a{
     margin: auto;
     background-color: rgba(155, 133, 123, 0.5);
     box-shadow: 6px 5px 3px rgba(32, 31, 31, 0.4);
-    padding: 20px;
+    padding-top: 80px;
     
     } 
     
     .card {
         
-        /* margin-left: auto;
-        margin-right: auto; */
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
 
-         width: 350px;
+    /* width: 350px;
     height: auto;
     box-shadow: 6px 5px 3px rgba(102, 88, 88, 0.7);
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
         
     }
     .card1 {
